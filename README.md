@@ -7,10 +7,10 @@ This is a simple "Hello World" web application containerized using Podman and se
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Stopping the Application](#stopping-the-application)
-- [Contributing](#contributing)
-- [License](#license)
+- [Build the docker image using Podman](#build-the-docker-image-using-podman)
+- [Run the Container](#run-the-container)
+- [Stop the Application](#stop-the-application)
+- [Remove the conatiner](#remove-the-container)
 
 ## Introduction
 
@@ -23,42 +23,43 @@ This project demonstrates how to create, build, and run a basic web application 
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
+Clone the repository:
+
+   '''bash
    git clone https://github.com/your-username/hello-world-app.git
    cd hello-world-app
-'''
+   '''
 
-   ## Build the docker image using Podman
+## Build the docker image using Podman
 
    '''bash
    podman build -t hello-world-app
-'''
+   '''
 
-   ## Run the Container
+## Run the Container
 
    '''bash
    podman run -d -p 8080:80 hello-world-app
-'''
+   '''
 
    Opem a web browser and navigate to 'http://localhost:8080' to see the application in action.
 
-   ## Stop the Application
+## Stop the Application
 
    List running containers
 
    '''bash
    podman ps
-'''
+   '''
 
    Stop the container
 
    '''bash
    podamn stop <container_id>
-'''
+   '''
 
-   ## Remove the container
+## Remove the container
 
    '''bash
    podman rm <container_id>
-'''
+   '''
