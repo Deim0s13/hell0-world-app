@@ -33,13 +33,13 @@ This project demonstrates how to create, build, and run a basic web application 
 
    '''bash
    podman build -t hello-world-app
-   '''
+'''
 
    ## Run the Container
 
    '''bash
    podman run -d -p 8080:80 hello-world-app
-   '''
+'''
 
    Opem a web browser and navigate to 'http://localhost:8080' to see the application in action.
 
@@ -49,16 +49,16 @@ This project demonstrates how to create, build, and run a basic web application 
 
    '''bash
    podman ps
-   '''
+'''
 
    Stop the container
 
    '''bash
    podamn stop <container_id>
-   '''
+'''
 
    ## Remove the container
 
    '''bash
    podman rm <container_id>
-   '''
+'''
