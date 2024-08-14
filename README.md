@@ -25,22 +25,22 @@ This project demonstrates how to create, build, and run a basic web application 
 
 Clone the repository:
 
-   '''bash
+   ```bash
    git clone https://github.com/your-username/hello-world-app.git
    cd hello-world-app
-   '''
+   ```
 
 ## Build the docker image using Podman
 
-   '''bash
+   ```bash
    podman build -t hello-world-app
-   '''
+   ```
 
 ## Run the Container
 
-   '''bash
+   ```bash
    podman run -d -p 8080:80 hello-world-app
-   '''
+   ```
 
    Opem a web browser and navigate to 'http://localhost:8080' to see the application in action.
 
@@ -48,18 +48,18 @@ Clone the repository:
 
    List running containers
 
-   '''bash
+   ```bash
    podman ps
-   '''
+   ```
 
    Stop the container
 
-   '''bash
+   ```bash
    podamn stop <container_id>
-   '''
+   ```
 
 ## Remove the container
 
-   '''bash
+   ```bash
    podman rm <container_id>
-   '''
+   ```
